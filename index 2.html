@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="device-width, initial scale=1.0">
+    <title>Wallpapers - Download Page</title>
+    <link rel="stylesheet" href="style 2.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="Nature/1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="Nature/1.jpg" onclick="openFullImg(this.src)">
+        <img src="Nature/2.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/3.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/4.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/5.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/6.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/7.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/8.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/9.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/10.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/11.jpg" onclick="openFullImg(this.src)" >
+        <img src="Nature/12.jpg" onclick="openFullImg(this.src)" >
+    </div>
+
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+</body>
+</html>
